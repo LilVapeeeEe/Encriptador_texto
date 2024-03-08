@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Encryptor</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagenes/icons8-favicon-48.png">
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="logo A ">
+    </header>
+    <main>
+        <section class="container">
+            <div class="encriptar">
+                <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="terminos">
+                <p> &#9432; Solo letras sin acento</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="encriptado">
+            <textarea name="texto-encriptado" id="texto-encriptado" cols="30" rows="10" disabled></textarea>
+            <button class="btn-copiar" type="button" onclick="copiar()" disabled>Copiar</button>
+            <img src="imagenes/Muñeco.png" alt="" id="munieco">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningun mensaje ha sido encontrado</h2>
+                <p id="disclaimer">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+    <img class="footer-img" src="imagenes/footer.png" alt="pixelArt">
+    <p class="developed" >Developed by Juan Rivas AKA Vape - 2024</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
